@@ -1,0 +1,40 @@
+//feature of the compiler that it links all the standard libraries
+#include<bits/stdc++.h>
+
+//all the methods belong to standard namespace
+using namesapce std;
+
+// I/O are bottlenecks for performance
+ios::sync_with_stdio(0);
+cin.tie(0);
+
+// use \n instead of endl as endl flushes the output stream
+
+
+// Print floting pt numbers to a specific number of decimal values
+printf("%.9f", x)
+
+// precision of long float - 10 bytes is better than 8bytes float
+
+// Code shortening
+//
+// a) Type naming - only for data types
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+// b) Macros - certain strings are replaced in code before compilation
+#define F first
+#define S second
+#define PB push_back
+#define MP make-pair
+#define REP(i,a,b) for (int i = a; i <= b; i++)
+
+
+
+
+
+// compile using
+g++ -std=c++11 -O2 -Wall test.cpp -o test
+g++ -std=c++14 -O2 -Wall DFS2.cpp -o dfs
+
+
