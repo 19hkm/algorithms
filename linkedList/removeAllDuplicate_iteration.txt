@@ -1,0 +1,28 @@
+public ListNode getLastNode(ListNode head) {
+        if(head == null) return head;
+        ListNode lNode= head;
+        while(lNode.next!=null && lNode.next.val == head.val) {
+            lNode = lNode.next;
+        }
+        return lNode;
+    }
+    
+    public ListNode deleteDuplicates(ListNode head) {
+//IMP: Add a dummy head to keep track of the first element
+        ListNode newHead = new ListNode(0,head);
+        head = newHead;
+        ListNode nextNode = head.next;
+        
+        while(nextNode != null) {            
+            ListNode nextNodeLast = getLastNode(nextNode);
+            if(nextNodeLast == nextNode) {
+                head.next = nextNode;
+                head = nextNodeLast;
+                nextNode = head.next;
+            } else {
+               nextNode = nextNodeLast.next;     
+            }
+        }
+        head.next = nextNode;
+        return newHead.next;
+    }
