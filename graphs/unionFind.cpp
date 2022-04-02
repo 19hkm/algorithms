@@ -30,15 +30,6 @@ void prepAdj() {
     parSize = vector<int>(N,1);
 }
 
-
-// void printIntVec(vector<int> &v) {
-// 	cout<<"printing distance nodes\n";
-// 	for(auto a: v){
-//         cout<<a<<" ";
-//     }
-// 	cout<<endl;
-// }
-
 int find( int src ) {
     cout<<"find: "<<src<<endl;
     loopi(i,0,N) cout<<par[i]<<" ";
