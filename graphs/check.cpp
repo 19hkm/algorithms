@@ -1,12 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main() {
-    int i=63;
-    while(i){
-        cout<<i<<endl;
-        i= i>>1 ;
-    }
+    vector<int> v;
+    auto v2 = vector<int>();
+    v2.push_back(2);
+    v2.push_back(2);
+    v2.push_back(2);
+    v2.push_back(2);
+    v2.push_back(2);
+    v2.push_back(2);
+    v2.push_back(2);
+
+    cout<<sizeof(v)<<" n "<<sizeof(v2)<<endl;
     return 0;
 }
