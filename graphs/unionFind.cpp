@@ -79,9 +79,6 @@ bool edgeComparator(auto a, auto b) {
 
 int main() {
 	prepAdj();
-
-    int ans=0;
-    cout<<ans<<endl;
     sort(edges.begin(), edges.end(), edgeComparator);
 
     for(auto e: edges) {
