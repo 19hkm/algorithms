@@ -30,15 +30,6 @@ void prepAdj() {
     parSize = vector<int>(N,1);
 }
 
-
-// void printIntVec(vector<int> &v) {
-// 	cout<<"printing distance nodes\n";
-// 	for(auto a: v){
-//         cout<<a<<" ";
-//     }
-// 	cout<<endl;
-// }
-
 int find( int src ) {
     cout<<"find: "<<src<<endl;
     loopi(i,0,N) cout<<par[i]<<" ";
@@ -79,9 +70,6 @@ bool edgeComparator(auto a, auto b) {
 
 int main() {
 	prepAdj();
-
-    int ans=0;
-    cout<<ans<<endl;
     sort(edges.begin(), edges.end(), edgeComparator);
 
     for(auto e: edges) {
