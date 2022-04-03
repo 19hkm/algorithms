@@ -20,9 +20,8 @@
             
             if(nums[mid] > nums[mid + 1])
                     right= mid;
-            
-            elseleft= mid + 1;
-            
+            else left= mid + 1;
+            s
         }
         
         returnright;
