@@ -10,6 +10,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Approach 1: find total n. Kind of like 2 passes(little less but not 1 pass).
 class Solution {
 public:
     void swapNode(ListNode* n1, ListNode* n2){
@@ -50,3 +52,14 @@ public:
         return head;
     }
 };
+
+
+
+// Approach 2: burnign rope from 2 sides wala concept.
+// moke k from left. Till then keep right at 0
+// once left reaches k, stop it and start moving right
+// so right moves n-k and left moves k
+// => Swap
+
+// Implementation:
+//  https://leetcode.com/problems/swapping-nodes-in-a-linked-list/discuss/1912205/C%2B%2B-two-pointer-approach
