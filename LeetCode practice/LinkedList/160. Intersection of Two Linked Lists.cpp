@@ -91,3 +91,20 @@ public:
 
 //METHOD 3: amazing amazing solution
 // https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len!
+class Solution {
+public:
+    
+    
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        if(!headA || !headB ) return NULL;
+        
+        ListNode *a = headA;
+        ListNode *b = headB;
+        
+        while(a != b){
+            a = !a?  headB : a->next;
+            b = !b? headA : b->next;
+        }
+        return a;
+    }
+};
