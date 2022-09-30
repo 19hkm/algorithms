@@ -37,3 +37,11 @@ public:
         return rightViewVec;
     }
 };
+
+
+// Additionally can be solved by simply putting right and then left node tto the queue
+// and apply same logic as left view
+
+// Also refer pre-order soln 
+// Do DFS from right side. Insert first node of that level
+// Ref: https://leetcode.com/problems/binary-tree-right-side-view/discuss/56241/C%2B%2B-BFSDFS
