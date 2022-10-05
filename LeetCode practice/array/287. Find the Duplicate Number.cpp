@@ -19,3 +19,28 @@ public:
 nums[i] *= -1;
 index = abs(nums[i])
 See editorial solution
+
+
+
+
+
+
+// method 3: modify existing array while operating but reset back to original. O(1) extra space
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int n = nums.size();
+        for(int i=0; i<n; i++) {
+            int index = nums[i]%n;
+            nums[index] += n;
+        }
+        int repNum = -1;
+        for(int i=0; i<n; i++) {
+            if(nums[i]/n >1) {
+                repNum = i;
+            }
+            nums[i] = nums[i]%n;
+        }
+        return repNum;
+    }
+};
