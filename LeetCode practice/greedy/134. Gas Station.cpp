@@ -1,4 +1,6 @@
 // https://leetcode.com/problems/gas-station/
+// https://www.interviewbit.com/problems/gas-station/
+
 // very nice problem. Proving solution exists is main imp
 // Consider tGas>tCost and prove by contradiction that no such config exists where travelling is not possible
 
