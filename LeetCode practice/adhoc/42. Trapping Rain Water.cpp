@@ -22,7 +22,7 @@ public:
 };
 
 // METHOD 2: O(N) time and O(1) space. - 2ptr logic
-// see discussion
+// see discussion: https://leetcode.com/problems/trapping-rain-water/discuss/2679351/C%2B%2B-Solution-using-two-pointers
 // logic keep 2 maxPtrs on both side. If currLeft>currRight then currLeft will be bounded by right
 // if on left its lesser than lMax then it can hold water or else it will update lMax
 // same logic for right
