@@ -6,9 +6,9 @@
         int right= nums.size() - 1;
         
         if(nums.size() == 0)
-            return-1;
+            return -1;
         if(nums.size() == 1)
-            return0;
+            return 0;
         while(left< right) {
             mid = (left+ right)/2;
             if(nums[mid] > nums[mid + 1])
